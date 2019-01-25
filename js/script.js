@@ -11,7 +11,7 @@
 //6. Hide the loader again
 
 //same as document ready
-$(function () {
+(function () {
     $('#menu-select').on('change', function () {
         const section = $(this).val();
         // console.log(menu);
@@ -27,14 +27,23 @@ $(function () {
         $.ajax({
             method: 'GET',
             url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq',
-            dataType: 'json',
-        }).done(function (data) {
-            console.log(data);
+            dataType: 'json'
+        })
+        .done(function (data) {
             //steps 3+4 are in 'done'
+            //console log below is an object
             console.log(data.results);
-        }).fail(function () {
+            //append all the stuff
+            //1. filter the data to only include 12 articles with images
+            //2. create .each to run a function for each article in response.results
+            //3. for each article - create constants for img URL, title, and link
+            //4. then we can make HTML string for the article, using the constans we just created
+            //5. append string to stories section
+        })
+        .fail(function () {
             //do stuff here if it doesn't work
-        }).always(function () {
+        })
+        .always(function () {
             //hide the loader
         });
     });
