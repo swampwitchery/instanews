@@ -1,7 +1,3 @@
-$(function () {
-    console.log("Welcome to Instanews");
-});
-
 // Problem: Retrieve content from the NYT API - Top Stories API and add it to our site. 
 //If we don't get a successful response, let the user know. About 118 lines of code.
 
@@ -29,9 +25,9 @@ $(function () {
         // https://api.nytimes.com/svc/topstories/v2/{section}.json
 
         $.ajax({
-            method: 'GET'
-            url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq'
-            dataType: 'json'
+            method: 'GET',
+            url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq',
+            dataType: 'json',
         }).done(function (data) {
             console.log(data);
             //steps 3+4 are in 'done'
