@@ -1,4 +1,21 @@
 body {
-    color: #ffffff;
-    background-color: black;
+    color: $font-color;
+    background-color: $background;
+    font-family: $font;
+    font-weight: 300;
+    font-style: normal;
 }
+
+.drop-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    font-size: $font-size;
+}
+
+.sections {
+    text-align: center;
+    max-width: 100px;
+}
+

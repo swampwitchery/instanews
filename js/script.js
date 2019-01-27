@@ -15,8 +15,8 @@ $(function () {
     $('#menu-select').on('change', function () {
         const section = $(this).val();
         // console.log(section);
-
         //if value is empty, return
+        $('.loading').append('<img src="./assets/images/ajax-loader.gif">');
         //show loader
         //clear stories
 
