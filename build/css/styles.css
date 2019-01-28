@@ -189,10 +189,9 @@ label {
   text-align: center;
   max-width: 100px; }
 
-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.loading img {
+  width: 70px;
+  height: auto; }
 
 .copyright {
   color: #c2c2c2;

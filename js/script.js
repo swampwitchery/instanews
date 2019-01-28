@@ -17,7 +17,7 @@ $(function () {
         // console.log(section);
         //if value is empty, return
         $('.loading').append('<img src="./assets/images/ajax-loader.gif">');
-        //show loader
+        $('.articles').empty();
         //clear stories
 
         //make our ajax request
@@ -29,10 +29,15 @@ $(function () {
                 url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq',
                 dataType: 'json'
             })
-            .done(function (data) {
-                //steps 3+4 are in 'done'
+            .done(function (data) { 
+                $.each(data.results, function (key, value) {
+                    console.log(value);
+                    if (value.multimedia[4] !== undefined) {
+                        $('.articles').append("<li><a target=_'blank' href=" + value.url + "><img src=" + value.multimedia[4].url + "><p> " + value.abstract + "</p></a></li>");
+                    }
+
+                });
                 //console log below is an object
-                console.log(data.results);
                 //append all the stuff
                 //1. filter the data to only include 12 articles with images
                 //2. create .each to run a function for each article in response.results
