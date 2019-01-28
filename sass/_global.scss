@@ -6,12 +6,19 @@ body {
     font-style: normal;
 }
 
+label{
+    font-size: .8em;
+}
+
 .drop-menu {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     font-size: 16px;
+    margin: 35%;
 }
 
 .sections {
