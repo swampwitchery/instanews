@@ -1,5 +1,6 @@
 .nyt-logo {
-    padding-top: 15px;}
+    padding-top: 15px;
+}
 
 .loading img {
     width: 70px;
@@ -8,5 +9,19 @@
 
 .sections {
     font-size: 18px;
-    
+}
+
+.articles li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.article-area {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; 
+    height: auto;    
+    justify-content: center;
+    align-items: center;
 }

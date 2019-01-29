@@ -53,7 +53,7 @@ $(function () {
                 //do stuff here if it doesn't work
             })
             .always(function () {
-                //hide the loader
+                $('.loading').remove();
             });
     });
 });
