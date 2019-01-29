@@ -53,7 +53,7 @@ $(function () {
                 //do stuff here if it doesn't work
             })
             .always(function () {
-                $('.loading').remove();
+                $('.loading img').remove();
             });
     });
 });
