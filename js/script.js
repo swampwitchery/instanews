@@ -50,7 +50,7 @@ $(function () {
                 //5. append string to stories section
             })
             .fail(function (err) {
-                //do stuff here if it doesn't work
+                alert("sorry, try again!")
             })
             .always(function () {
                 $('.loading img').remove();
