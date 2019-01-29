@@ -183,15 +183,21 @@ label {
           align-items: center;
   height: 100%;
   font-size: 16px;
-  margin: 35%; }
+  margin: 35%;
+  padding: 10px; }
 
 .sections {
-  text-align: center;
-  max-width: 100px; }
+  text-align: center; }
+
+.nyt-logo {
+  padding-top: 15px; }
 
 .loading img {
   width: 70px;
   height: auto; }
+
+.sections {
+  font-size: 18px; }
 
 .copyright {
   color: #c2c2c2;
@@ -204,4 +210,5 @@ label {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  padding-top: 30px; }

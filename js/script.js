@@ -12,6 +12,7 @@
 
 //same as document ready
 $(function () {
+
     $('#menu-select').on('change', function () {
         const section = $(this).val();
         // console.log(section);
@@ -29,9 +30,12 @@ $(function () {
                 url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq',
                 dataType: 'json'
             })
-            .done(function (data) { 
-                $.each(data.results, function (key, value) {
-                    console.log(value);
+            .done(function (data) {
+                const filteredData = data.results.filter(function (data) {
+                    return data.multimedia.length > 4;
+                }).slice(0, 12);
+                $.each(filteredData, function (key, value) {
+                    //console.log(value);
                     if (value.multimedia[4] !== undefined) {
                         $('.articles').append("<li><a target=_'blank' href=" + value.url + "><img src=" + value.multimedia[4].url + "><p> " + value.abstract + "</p></a></li>");
                     }
