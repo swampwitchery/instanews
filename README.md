@@ -1,12 +1,13 @@
 #Instanews project
 This is the second project for the Web Development Program at RED Academy,
-where we implimented jQuery, with use of AJAX. 
-this is a project to showcase HTML and CSS to build a responsive website
+where we implimented jQuery, with use of AJAX. This website uses an API to 
+populate the page with top stories from the New York Times.
+<!-- this is a project to showcase HTML and CSS to build a responsive website
 as part of the Web Development Program at RED Academy. This was the first project
 completed and my first time utilizing various forms of code. Adapting a
 carousel/flickity proved to be difficult. The result was to build a responsive
 website to look like a front of an online clothing store with the skills
-learned within two weeks.
+learned within two weeks. -->
 
 ##Skills learned and used
 

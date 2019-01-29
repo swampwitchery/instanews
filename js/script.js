@@ -49,7 +49,7 @@ $(function () {
                 //4. then we can make HTML string for the article, using the constans we just created
                 //5. append string to stories section
             })
-            .fail(function () {
+            .fail(function (err) {
                 //do stuff here if it doesn't work
             })
             .always(function () {

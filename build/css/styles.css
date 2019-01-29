@@ -214,14 +214,6 @@ label {
           flex: 1; }
   .articles img {
     width: 100vw; }
-    @media (min-width: 600px) {
-      .articles img {
-        position: absolute;
-        -webkit-transform: translate(-20%, 0%);
-                transform: translate(-20%, 0%); } }
-    @media (min-width: 1000px) {
-      .articles img {
-        position: absolute; } }
   .articles li a {
     text-decoration: none;
     color: #fff; }
@@ -234,8 +226,6 @@ label {
   background-position: 50%; }
 
 p {
-  position: absolute;
-  position: absolute;
   line-height: 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }

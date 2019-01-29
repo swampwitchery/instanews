@@ -19,13 +19,6 @@
 
     img {
         width: 100vw;
-        @include tablet {
-            position: absolute;
-            transform: translate(-20%, 0%);
-          }
-          @include desktop {
-            position: absolute;
-          }
     }
 
     li a {
@@ -46,8 +39,7 @@
 }
 
 p {
-    position: absolute;
-    position: absolute;
+    // position: absolute;
     line-height: 1.5rem;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 }
