@@ -10,21 +10,15 @@
 //5. If unsuccessful, append and show a helpful error message to the user in the user interface (UI)
 //6. Hide the loader again
 
-//same as document ready
 $(function () {
 
     $('#menu-select').on('change', function () {
         const section = $(this).val();
         // console.log(section);
-        //if value is empty, return
         $('.loading').append('<img src="./assets/images/ajax-loader.gif">');
         $('.articles').empty();
-        //clear stories
 
-        //make our ajax request
-
-        // https://api.nytimes.com/svc/topstories/v2/{section}.json
-
+        //Ajax request
         $.ajax({
                 method: 'GET',
                 url: 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json?api-key=dVfSy4pK8FiCPPKz5OWw9rNW9Ma9dZKq',
@@ -41,13 +35,7 @@ $(function () {
                     }
 
                 });
-                //console log below is an object
-                //append all the stuff
-                //1. filter the data to only include 12 articles with images
-                //2. create .each to run a function for each article in response.results
-                //3. for each article - create constants for img URL, title, and link
-                //4. then we can make HTML string for the article, using the constans we just created
-                //5. append string to stories section
+
             })
             .fail(function () {
                 alert('sorry, try again!');
