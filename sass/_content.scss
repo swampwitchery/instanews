@@ -19,6 +19,7 @@
 
     img {
         width: 100%;
+
     }
 
     li a {
@@ -26,6 +27,20 @@
         text-decoration: none;
         color: #fff
     }
+
+    li {
+        position: relative;
+
+    }
+
+    li p {
+        width: 100%;
+        // box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
 }
 
 .article-area {
@@ -39,7 +54,6 @@
 }
 
 p {
-    // position: absolute;
     line-height: 1.5rem;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
 }

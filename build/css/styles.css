@@ -213,10 +213,17 @@ label {
       -ms-flex: 1;
           flex: 1; }
   .articles img {
-    width: 100vw; }
+    width: 100%; }
   .articles li a {
     text-decoration: none;
     color: #fff; }
+  .articles li {
+    position: relative; }
+  .articles li p {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 .article-area {
   width: 100vw;
@@ -227,8 +234,8 @@ label {
 
 p {
   line-height: 1.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
 
 .copyright {
   color: #c2c2c2;

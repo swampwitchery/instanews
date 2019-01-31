@@ -49,8 +49,8 @@ $(function () {
                 //4. then we can make HTML string for the article, using the constans we just created
                 //5. append string to stories section
             })
-            .fail(function (err) {
-                alert("sorry, try again!")
+            .fail(function () {
+                alert('sorry, try again!');
             })
             .always(function () {
                 $('.loading img').remove();
