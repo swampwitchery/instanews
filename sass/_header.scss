@@ -1,0 +1,29 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include tablet {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    margin-left: unset;
+  }
+
+  // once you include JS for the header you can add the below *these values would need to be changed; just an example. 
+
+  .small-header {
+    display: flex;
+    width: 20px;
+  }

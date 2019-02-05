@@ -5,4 +5,8 @@
     align-items: flex-end;
     font-size: 0.9em;
     padding-top: 30px;
+
+    @include desktop {
+        text-align: left;
+    }
 }
