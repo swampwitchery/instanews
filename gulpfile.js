@@ -7,7 +7,16 @@ const eslint = require('gulp-eslint');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const prettyError = require('gulp-prettyerror');
+const babel = require("gulp-babel");
 
+const input = "js/script.js";
+const output = "dist";
+gulp.task("./js", () => {
+  return gulp
+    .src(input)
+    .pipe(babel())
+    .pipe(gulp.dest(output));
+});
 
 // Task to compiling and minifying Sass
 gulp.task('sass', function () {
@@ -39,7 +48,6 @@ gulp.task('script', function (done) {
       extname: '.min.js'
     })) // Rename the uglified file
     .pipe(gulp.dest('./build/js')); // Where do we put the result?
-  done();
 });
 
 //Task to watch for changes to CSS files
