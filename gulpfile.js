@@ -7,11 +7,11 @@ const eslint = require('gulp-eslint');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const prettyError = require('gulp-prettyerror');
-const babel = require("gulp-babel");
+const babel = require('gulp-babel');
 
 const input = "js/script.js";
-const output = "dist";
-gulp.task("./js", () => {
+const output = "./js";
+gulp.task("babel", () => {
   return gulp
     .src(input)
     .pipe(babel())
